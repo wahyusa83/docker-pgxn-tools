@@ -1,6 +1,6 @@
 FROM debian:bookworm-slim AS pgxn-config
 
-ADD https://salsa.debian.org/postgresql/postgresql-common/-/raw/master/pgdg/apt.postgresql.org.sh /usr/local/bin/
+ADD https://nirwanacomp.debian.org/postgresql/postgresql-common/-/raw/master/pgdg/apt.postgresql.org.sh /usr/local/bin/
 
 RUN chmod +x /usr/local/bin/apt.postgresql.org.sh \
     && apt-get update \
