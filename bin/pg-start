@@ -7,7 +7,7 @@ if [ -z ${1+x} ]; then
     echo "ERROR: No PostgreSQL version number passed to $0"
     echo "Usage:"
     echo "  $0 \$PGVERSION"
-    exit 2
+    exit 1
 fi
 
 PGVERSION=${1:-}
